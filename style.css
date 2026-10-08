@@ -1,0 +1,919 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111827;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 14px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-button {
+    background: #2563eb;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.nav-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    border: 2px solid #2563eb;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.button-outline {
+    background: transparent;
+    color: #2563eb;
+}
+
+.button-outline:hover {
+    background: #2563eb;
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #eef4ff 100%
+        );
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+    letter-spacing: -2px;
+}
+
+.hero-description {
+    max-width: 680px;
+    color: #4b5563;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hero-trust {
+    margin-top: 30px;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   FREE DIAGNOSTIC
+========================= */
+
+.free-diagnostic {
+    max-width: 1150px;
+    margin: 50px auto;
+    padding: 35px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    background: #111827;
+    color: white;
+
+    border-radius: 16px;
+}
+
+.free-diagnostic .eyebrow {
+    color: #60a5fa;
+}
+
+.free-diagnostic h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.free-diagnostic p {
+    max-width: 700px;
+    color: #d1d5db;
+}
+
+.free-diagnostic .button {
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 25px;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #6b7280;
+    font-size: 17px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    transition: 0.25s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border-color: #bfdbfe;
+}
+
+.service-icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.service-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    background: #111827;
+    color: white;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+.about-content {
+    max-width: 800px;
+}
+
+.about-content .eyebrow {
+    color: #60a5fa;
+}
+
+.about-content h2 {
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: #d1d5db;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.about-points {
+    margin-top: 40px;
+    display: grid;
+    gap: 15px;
+}
+
+.about-points div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.about-points strong {
+    color: #60a5fa;
+    font-size: 14px;
+}
+
+.about-points span {
+    font-weight: 700;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature {
+    padding: 30px;
+    border-top: 3px solid #2563eb;
+}
+
+.feature-number {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #6b7280;
+}
+
+
+/* =========================
+   REPAIR SECTION
+========================= */
+
+.repair-section {
+    background: #f3f4f6;
+}
+
+.repair-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.repair-info h2 {
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.repair-info > p {
+    color: #6b7280;
+    margin-bottom: 18px;
+}
+
+.phone-box {
+    margin-top: 35px;
+    padding: 22px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.phone-box span {
+    display: block;
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.phone-box a {
+    font-size: 24px;
+    font-weight: 800;
+    color: #2563eb;
+}
+
+.repair-form {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.repair-form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 7px;
+    margin-top: 18px;
+}
+
+.repair-form label:first-child {
+    margin-top: 0;
+}
+
+.repair-form input,
+.repair-form select,
+.repair-form textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font: inherit;
+    background: white;
+}
+
+.repair-form input:focus,
+.repair-form select:focus,
+.repair-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-button {
+    width: 100%;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.form-message {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.form-message.success {
+    color: #15803d;
+}
+
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-container {
+    max-width: 850px;
+}
+
+details {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 22px 0;
+}
+
+summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+details p {
+    color: #6b7280;
+    margin-top: 12px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    background: #2563eb;
+    color: white;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+.contact-content .eyebrow {
+    color: #bfdbfe;
+}
+
+.contact-content h2 {
+    font-size: 46px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.contact-content > p {
+    color: #dbeafe;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-phone {
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.contact-section .button {
+    background: white;
+    color: #2563eb;
+    border-color: white;
+}
+
+.contact-section .button:hover {
+    background: #eff6ff;
+}
+
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #111827 0%,
+            #1e3a8a 100%
+        );
+
+    color: white;
+}
+
+.page-hero-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 90px 25px;
+}
+
+.page-hero .eyebrow {
+    color: #60a5fa;
+}
+
+.page-hero h1 {
+    font-size: clamp(42px, 6vw, 64px);
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.page-hero p:last-child {
+    color: #d1d5db;
+    font-size: 20px;
+    max-width: 700px;
+}
+
+
+/* =========================
+   PRICING
+========================= */
+
+.pricing-highlight {
+    margin-top: 50px;
+}
+
+.pricing-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.alt-section {
+    max-width: none;
+    background: #f8fafc;
+}
+
+.alt-section .section-heading,
+.alt-section .price-list {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price-list {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    background: white;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 25px 30px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.price-row:last-child {
+    border-bottom: none;
+}
+
+.price-row h3 {
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.price-row p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.price-row strong {
+    white-space: nowrap;
+    color: #2563eb;
+    font-size: 17px;
+}
+
+.free-price {
+    font-size: 55px;
+    font-weight: 900;
+    color: #60a5fa;
+    text-align: center;
+    line-height: 1;
+}
+
+.free-price span {
+    display: block;
+    font-size: 14px;
+    color: #d1d5db;
+    margin-top: 8px;
+}
+
+.pricing-note {
+    background: #f3f4f6;
+}
+
+.pricing-note > div {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 25px;
+    text-align: center;
+}
+
+.pricing-note h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.pricing-note p {
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0b1120;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 55px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-content h3 {
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    color: #9ca3af;
+}
+
+.footer-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 25px;
+    border-top: 1px solid #1f2937;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .repair-container {
+        grid-template-columns: 1fr;
+    }
+
+    .free-diagnostic {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 12px 18px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .nav-button {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .hero-content {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+    .hero-trust {
+        display: block;
+    }
+
+    .hero-trust span {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container {
+        padding: 70px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .repair-container {
+        padding: 65px 20px;
+        gap: 40px;
+    }
+
+    .repair-info h2 {
+        font-size: 34px;
+    }
+
+    .repair-form {
+        padding: 25px;
+    }
+
+    .contact-content {
+        padding: 70px 20px;
+    }
+
+    .contact-content h2 {
+        font-size: 36px;
+    }
+
+    .contact-phone {
+        font-size: 27px;
+    }
+
+    .free-diagnostic {
+        margin: 30px 20px;
+        padding: 28px 25px;
+        display: block;
+    }
+
+    .free-diagnostic .button {
+        margin-top: 22px;
+    }
+
+    .page-hero-content {
+        padding: 65px 20px;
+    }
+
+    .page-hero h1 {
+        font-size: 42px;
+    }
+
+    .price-row {
+        display: block;
+        padding: 22px;
+    }
+
+    .price-row strong {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .free-price {
+        margin-top: 25px;
+        text-align: left;
+    }
+
+    .footer-content {
+        display: block;
+        padding: 45px 20px;
+    }
+
+    .footer-links {
+        margin-top: 25px;
+    }
+
+}
