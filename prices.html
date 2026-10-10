@@ -1,640 +1,603 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Affordable technology repair prices at Weber's Tech Repair Shop in Mattoon, Illinois. Free diagnostics for laptops, PCs, phones, consoles, and printers.">
+  <title>Prices | Weber's Tech Repair Shop</title>
+  <link rel="stylesheet" href="style.css">
 
-    <meta charset="UTF-8">
+  <style>
+    .price-list {
+      max-width: 980px;
+      margin: 0 auto;
+    }
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    .price-row strong {
+      white-space: nowrap;
+      text-align: right;
+    }
 
-    <meta
-        name="description"
-        content="Affordable technology repair pricing from Weber's Tech Repair Shop. Free diagnostics for phones, laptops, PCs, game consoles, printers, and more."
-    >
+    .pricing-section {
+      scroll-margin-top: 90px;
+    }
 
-    <title>Prices | Weber's Tech Repair Shop</title>
+    .price-jump {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      max-width: 980px;
+      margin: 25px auto;
+      padding: 0 20px;
+    }
 
-    <link rel="stylesheet" href="style.css">
+    .price-jump a {
+      border: 1px solid #cbd5e1;
+      border-radius: 30px;
+      padding: 10px 16px;
+      background: white;
+      color: #172336;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
+    .price-jump a:hover {
+      border-color: #2563eb;
+      color: #2563eb;
+    }
+
+    .pricing-note {
+      padding: 35px 22px;
+    }
+
+    .pricing-note > div {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    @media (max-width: 560px) {
+      .price-row {
+        gap: 12px;
+      }
+
+      .price-row strong {
+        min-width: 90px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
 </head>
-
 
 <body>
 
-
 <header>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Weber's Tech Repair Shop">
+    </a>
 
-    <nav class="navbar">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="prices.html">Prices</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="waiver.html">Waiver &amp; Terms</a>
+    </div>
 
-        <a href="index.html" class="logo">
-
-            <img
-                src="logo.png"
-                alt="Weber's Tech Repair Shop"
-            >
-
-        </a>
-
-
-        <div class="nav-links">
-
-            <a href="index.html">Home</a>
-
-            <a href="index.html#services">Services</a>
-
-            <a href="prices.html">Prices</a>
-
-            <a href="index.html#about">About</a>
-
-            <a href="index.html#faq">FAQ</a>
-
-            <a href="index.html#contact">Contact</a>
-
-        </div>
-
-
-        <a
-            href="index.html#repair"
-            class="nav-button"
-        >
-            Request Repair
-        </a>
-
-    </nav>
-
+    <a
+      href="https://app.squareup.com/appointments/book/hkiio83uwigmk5/L3M8JD759WEPA/start"
+      class="nav-button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Book Appointment
+    </a>
+  </nav>
 </header>
-
 
 <main>
 
-
-<!-- PRICE HERO -->
-
-<section class="page-hero">
-
+  <!-- PAGE HEADER -->
+  <section class="page-hero">
     <div class="page-hero-content">
-
-        <p class="eyebrow">
-            WEBER'S TECH REPAIR SHOP
-        </p>
-
-        <h1>Simple & Affordable Pricing.</h1>
-
-        <p>
-            Quality technology repair without the high prices.
-            And every diagnostic is completely free.
-        </p>
-
+      <p class="eyebrow">WEBER'S TECH REPAIR SHOP</p>
+      <h1>Simple &amp; Affordable Pricing.</h1>
+      <p>
+        Quality technology repair without the high prices.
+        Every diagnostic is completely free.
+      </p>
     </div>
+  </section>
 
-</section>
-
-
-<!-- FREE DIAGNOSTIC -->
-
-<section class="free-diagnostic pricing-highlight">
-
+  <!-- FREE DIAGNOSTICS -->
+  <section class="free-diagnostic pricing-highlight">
     <div>
-
-        <p class="eyebrow">
-            START HERE
-        </p>
-
-        <h2>FREE Diagnostics</h2>
-
-        <p>
-            Not sure what's wrong? No problem.
-            Bring your device in and I'll diagnose the issue
-            for free. You'll receive an estimate before any
-            paid repair work begins.
-        </p>
-
+      <p class="eyebrow">START HERE</p>
+      <h2>FREE Diagnostics</h2>
+      <p>
+        Not sure what's wrong with your device?
+        Request a drop-off appointment and I'll diagnose
+        the problem for free. You'll receive an estimate
+        before any paid repair work begins.
+      </p>
     </div>
 
     <div class="free-price">
-        $0
-        <span>Diagnostic</span>
+      $0
+      <span>Diagnostic</span>
     </div>
+  </section>
 
-</section>
+  <!-- QUICK NAVIGATION -->
+  <div class="price-jump">
+    <a href="#laptops">Laptops</a>
+    <a href="#desktops">Desktop PCs</a>
+    <a href="#phones">Phones</a>
+    <a href="#consoles">Gaming Consoles</a>
+    <a href="#printers">Printers</a>
+    <a href="#support">Tech Support</a>
+  </div>
 
-
-<!-- COMPUTERS -->
-
-<section class="section pricing-section">
-
+  <!-- LAPTOP REPAIRS -->
+  <section class="section pricing-section" id="laptops">
     <div class="section-heading">
-
-        <p class="eyebrow">
-            COMPUTERS
-        </p>
-
-        <h2>PC & Laptop Repair</h2>
-
-        <p>
-            Starting prices for common computer services.
-        </p>
-
+      <p class="eyebrow">LAPTOP SERVICES</p>
+      <h2>Laptop Repair</h2>
+      <p>
+        Screen, battery, keyboard, hardware, and software repairs.
+      </p>
     </div>
-
 
     <div class="price-list">
 
-        <div class="price-row">
-            <div>
-                <h3>Computer Repair</h3>
-                <p>Troubleshooting and general repair.</p>
-            </div>
-            <strong>From $40</strong>
+      <div class="price-row">
+        <div>
+          <h3>Laptop Screen Replacement</h3>
+          <p>Replacement of cracked or damaged laptop screens.</p>
         </div>
+        <strong>$50–$90</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Software Troubleshooting</h3>
-                <p>Software errors, updates, and problems.</p>
-            </div>
-            <strong>From $30</strong>
+      <div class="price-row">
+        <div>
+          <h3>Laptop Battery Replacement</h3>
+          <p>Replacement of worn or failing batteries.</p>
         </div>
+        <strong>$30–$50</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Virus & Malware Removal</h3>
-                <p>Removal of unwanted or malicious software.</p>
-            </div>
-            <strong>From $40</strong>
+      <div class="price-row">
+        <div>
+          <h3>Keyboard Replacement</h3>
+          <p>Repair or replacement of damaged keyboards.</p>
         </div>
+        <strong>$40–$70</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>PC Cleanup & Optimization</h3>
-                <p>Improve performance and remove unnecessary files.</p>
-            </div>
-            <strong>From $40</strong>
+      <div class="price-row">
+        <div>
+          <h3>Charging Port Repair</h3>
+          <p>Repair of damaged or nonworking charging connections.</p>
         </div>
+        <strong>$45–$85</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>RAM Installation</h3>
-                <p>Installation of compatible memory.</p>
-            </div>
-            <strong>$25 + parts</strong>
+      <div class="price-row">
+        <div>
+          <h3>SSD / Storage Upgrade</h3>
+          <p>Installation of faster or larger storage drives.</p>
         </div>
+        <strong>$30–$50</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>SSD/HDD Installation</h3>
-                <p>Storage installation and setup.</p>
-            </div>
-            <strong>From $40 + parts</strong>
+      <div class="price-row">
+        <div>
+          <h3>RAM Upgrade</h3>
+          <p>Installation of compatible memory upgrades.</p>
         </div>
+        <strong>$20–$40</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Windows Installation</h3>
-                <p>Operating system installation and setup.</p>
-            </div>
-            <strong>From $50</strong>
+      <div class="price-row">
+        <div>
+          <h3>Windows Installation / Reinstallation</h3>
+          <p>Operating system installation and setup.</p>
         </div>
+        <strong>$40–$60</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>New Computer Setup</h3>
-                <p>Initial setup, updates, software, and configuration.</p>
-            </div>
-            <strong>From $50</strong>
+      <div class="price-row">
+        <div>
+          <h3>Virus &amp; Malware Removal</h3>
+          <p>Removal of unwanted or malicious software.</p>
         </div>
+        <strong>$35–$60</strong>
+      </div>
+
+      <div class="price-row">
+        <div>
+          <h3>Laptop Internal Cleaning</h3>
+          <p>Dust removal and internal fan cleaning.</p>
+        </div>
+        <strong>$25–$40</strong>
+      </div>
+
+      <div class="price-row">
+        <div>
+          <h3>Thermal Paste Replacement</h3>
+          <p>Replacement of thermal compound to improve cooling.</p>
+        </div>
+        <strong>$35–$60</strong>
+      </div>
+
+      <div class="price-row">
+        <div>
+          <h3>Data Backup / Transfer</h3>
+          <p>Transfer of files to another drive or computer.</p>
+        </div>
+        <strong>$30–$60</strong>
+      </div>
 
     </div>
+  </section>
 
-</section>
-
-
-<!-- PHONE -->
-
-<section class="section pricing-section alt-section">
-
+  <!-- DESKTOP PC REPAIRS -->
+  <section class="section pricing-section" id="desktops">
     <div class="section-heading">
-
-        <p class="eyebrow">
-            MOBILE DEVICES
-        </p>
-
-        <h2>Phone Repair</h2>
-
-        <p>
-            Phone repair pricing varies by make, model, and parts.
-        </p>
-
+      <p class="eyebrow">DESKTOP SERVICES</p>
+      <h2>Desktop PC Repair</h2>
+      <p>Hardware upgrades, cleaning, troubleshooting, and repairs.</p>
     </div>
-
 
     <div class="price-list">
 
-        <div class="price-row">
-            <div>
-                <h3>Screen Replacement</h3>
-                <p>Labor plus replacement screen.</p>
-            </div>
-            <strong>From $50 + parts</strong>
+      <div class="price-row">
+        <div>
+          <h3>Desktop PC Cleaning</h3>
+          <p>Dust removal and internal cleaning.</p>
         </div>
+        <strong>$30–$50</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Battery Replacement</h3>
-                <p>Battery replacement for supported devices.</p>
-            </div>
-            <strong>From $40 + parts</strong>
+      <div class="price-row">
+        <div>
+          <h3>Power Supply Replacement</h3>
+          <p>Installation of a replacement power supply.</p>
         </div>
+        <strong>$35–$60</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Charging Port Repair</h3>
-                <p>Charging and connection problems.</p>
-            </div>
-            <strong>From $50 + parts</strong>
+      <div class="price-row">
+        <div>
+          <h3>Hardware Installation</h3>
+          <p>RAM, SSD, graphics card, and other component installation.</p>
         </div>
+        <strong>$20–$50</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Phone Software Troubleshooting</h3>
-                <p>Software errors, updates, and setup.</p>
-            </div>
-            <strong>From $30</strong>
+      <div class="price-row">
+        <div>
+          <h3>PC Troubleshooting</h3>
+          <p>Initial diagnosis of hardware or software problems.</p>
         </div>
+        <strong>FREE</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Phone Setup / Data Transfer</h3>
-                <p>Move information and help set up a new device.</p>
-            </div>
-            <strong>From $40</strong>
+      <div class="price-row">
+        <div>
+          <h3>Desktop PC Repair</h3>
+          <p>General hardware and software repairs.</p>
         </div>
+        <strong>From $40</strong>
+      </div>
 
     </div>
+  </section>
 
-</section>
-
-
-<!-- CONSOLES -->
-
-<section class="section pricing-section">
-
+  <!-- PHONE REPAIRS -->
+  <section class="section pricing-section" id="phones">
     <div class="section-heading">
-
-        <p class="eyebrow">
-            GAMING
-        </p>
-
-        <h2>Game Console Repair</h2>
-
-        <p>
-            PlayStation, Xbox, Nintendo, and other supported consoles.
-        </p>
-
+      <p class="eyebrow">MOBILE DEVICES</p>
+      <h2>Phone Repair</h2>
+      <p>Affordable repairs for common smartphone problems.</p>
     </div>
-
 
     <div class="price-list">
 
-        <div class="price-row">
-            <div>
-                <h3>Console Diagnostic</h3>
-                <p>Find out what's wrong with your console.</p>
-            </div>
-            <strong>FREE</strong>
+      <div class="price-row">
+        <div>
+          <h3>Phone Screen Replacement</h3>
+          <p>Replacement of cracked or damaged displays.</p>
         </div>
+        <strong>$40–$80</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Console Cleaning</h3>
-                <p>Cleaning and dust removal.</p>
-            </div>
-            <strong>From $40</strong>
+      <div class="price-row">
+        <div>
+          <h3>Phone Battery Replacement</h3>
+          <p>Replacement of worn or failing batteries.</p>
         </div>
+        <strong>$30–$50</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Software Troubleshooting</h3>
-                <p>System and software-related problems.</p>
-            </div>
-            <strong>From $30</strong>
+      <div class="price-row">
+        <div>
+          <h3>Charging Port Cleaning</h3>
+          <p>Removal of lint and debris from charging ports.</p>
         </div>
+        <strong>$15–$25</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Hardware Repair</h3>
-                <p>Hardware-related repairs and replacements.</p>
-            </div>
-            <strong>From $50 + parts</strong>
+      <div class="price-row">
+        <div>
+          <h3>Other Phone Repairs</h3>
+          <p>Camera, speaker, button, and other repairs.</p>
         </div>
-
-
-        <div class="price-row">
-            <div>
-                <h3>Console Setup</h3>
-                <p>Setup and configuration for your gaming system.</p>
-            </div>
-            <strong>From $30</strong>
-        </div>
+        <strong>Free Quote</strong>
+      </div>
 
     </div>
+  </section>
 
-</section>
-
-
-<!-- PRINTERS -->
-
-<section class="section pricing-section alt-section">
-
+  <!-- GAMING CONSOLES -->
+  <section class="section pricing-section" id="consoles">
     <div class="section-heading">
-
-        <p class="eyebrow">
-            PRINTING
-        </p>
-
-        <h2>Printer Repair</h2>
-
-        <p>
-            Help getting your printer working properly again.
-        </p>
-
+      <p class="eyebrow">GAMING DEVICES</p>
+      <h2>Gaming Console &amp; Controller Repair</h2>
+      <p>Help with PlayStation, Xbox, Nintendo, and controllers.</p>
     </div>
-
 
     <div class="price-list">
 
-        <div class="price-row">
-            <div>
-                <h3>Printer Diagnostic</h3>
-                <p>Identify printer problems.</p>
-            </div>
-            <strong>FREE</strong>
+      <div class="price-row">
+        <div>
+          <h3>Console Internal Cleaning</h3>
+          <p>Dust removal and fan cleaning.</p>
         </div>
+        <strong>$30–$50</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Printer Setup</h3>
-                <p>Connect and configure your printer.</p>
-            </div>
-            <strong>From $30</strong>
+      <div class="price-row">
+        <div>
+          <h3>Console Thermal Paste Replacement</h3>
+          <p>Replacement of thermal compound where applicable.</p>
         </div>
+        <strong>$40–$65</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Driver / Software Troubleshooting</h3>
-                <p>Printer software and connection problems.</p>
-            </div>
-            <strong>From $30</strong>
+      <div class="price-row">
+        <div>
+          <h3>Controller Repair</h3>
+          <p>Button, joystick, and other controller issues.</p>
         </div>
+        <strong>$20–$40</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Printer Cleaning</h3>
-                <p>Basic internal and external cleaning.</p>
-            </div>
-            <strong>From $40</strong>
+      <div class="price-row">
+        <div>
+          <h3>Other Console Repairs</h3>
+          <p>Power, display, and hardware problems.</p>
         </div>
-
-
-        <div class="price-row">
-            <div>
-                <h3>Printer Hardware Repair</h3>
-                <p>Hardware-related repairs.</p>
-            </div>
-            <strong>From $50 + parts</strong>
-        </div>
+        <strong>Free Quote</strong>
+      </div>
 
     </div>
+  </section>
 
-</section>
-
-
-<!-- OTHER SERVICES -->
-
-<section class="section pricing-section">
-
+  <!-- PRINTER SERVICES -->
+  <section class="section pricing-section" id="printers">
     <div class="section-heading">
-
-        <p class="eyebrow">
-            OTHER SERVICES
-        </p>
-
-        <h2>Additional Technology Help</h2>
-
+      <p class="eyebrow">PRINTER SERVICES</p>
+      <h2>Printer Repair &amp; Setup</h2>
+      <p>Troubleshooting common printer issues.</p>
     </div>
-
 
     <div class="price-list">
 
-        <div class="price-row">
-            <div>
-                <h3>Data Transfer</h3>
-                <p>Move files from one device or drive to another.</p>
-            </div>
-            <strong>From $50</strong>
+      <div class="price-row">
+        <div>
+          <h3>Paper Jam Removal</h3>
+          <p>Removal of stuck paper and basic feed troubleshooting.</p>
         </div>
+        <strong>$20–$35</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>New Device Setup</h3>
-                <p>Get a new device configured and ready to use.</p>
-            </div>
-            <strong>From $40</strong>
+      <div class="price-row">
+        <div>
+          <h3>Print Quality Troubleshooting</h3>
+          <p>Help with streaking, faded prints, and other issues.</p>
         </div>
+        <strong>$25–$45</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>General Technology Help</h3>
-                <p>Personal assistance with everyday technology.</p>
-            </div>
-            <strong>$25/hour</strong>
+      <div class="price-row">
+        <div>
+          <h3>Printer Setup</h3>
+          <p>Printer installation, Wi-Fi connection, and configuration.</p>
         </div>
+        <strong>$25–$40</strong>
+      </div>
 
-
-        <div class="price-row">
-            <div>
-                <h3>Custom Repair</h3>
-                <p>Have something different? Contact Connor for a quote.</p>
-            </div>
-            <strong>Free Quote</strong>
+      <div class="price-row">
+        <div>
+          <h3>Other Printer Problems</h3>
+          <p>General printer troubleshooting and repairs.</p>
         </div>
+        <strong>Free Quote</strong>
+      </div>
 
     </div>
+  </section>
 
-</section>
+  <!-- ADDITIONAL SERVICES -->
+  <section class="section pricing-section" id="support">
+    <div class="section-heading">
+      <p class="eyebrow">ADDITIONAL SERVICES</p>
+      <h2>Tech Support &amp; Other Services</h2>
+      <p>Personalized help for your technology needs.</p>
+    </div>
 
+    <div class="price-list">
 
-<!-- PRICING NOTE -->
+      <div class="price-row">
+        <div>
+          <h3>Software Troubleshooting</h3>
+          <p>Help with software errors, updates, and applications.</p>
+        </div>
+        <strong>From $30</strong>
+      </div>
 
-<section class="pricing-note">
+      <div class="price-row">
+        <div>
+          <h3>Data Backup &amp; Transfer</h3>
+          <p>Transfer personal files to another device or drive.</p>
+        </div>
+        <strong>$30–$60</strong>
+      </div>
 
+      <div class="price-row">
+        <div>
+          <h3>Home Visit — Tech Support</h3>
+          <p>On-site technology help by approved appointment.</p>
+        </div>
+        <strong>Custom Quote</strong>
+      </div>
+
+      <div class="price-row">
+        <div>
+          <h3>General Tech Support</h3>
+          <p>One-on-one help with devices, software, and setup.</p>
+        </div>
+        <strong>$25/hour</strong>
+      </div>
+
+      <div class="price-row">
+        <div>
+          <h3>Custom Repair</h3>
+          <p>Don't see your repair listed? Contact us for a quote.</p>
+        </div>
+        <strong>Free Quote</strong>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IMPORTANT PRICING INFORMATION -->
+  <section class="pricing-note">
     <div>
+      <h2>A Few Things to Know</h2>
 
-        <h2>A Few Things to Know</h2>
+      <p>
+        All listed prices are estimated labor costs.
+        Final pricing may vary depending on the device,
+        repair difficulty, and time required.
+      </p>
 
-        <p>
-            All prices shown are starting prices. Final pricing may vary
-            depending on the device, repair difficulty, parts required,
-            and time involved.
-        </p>
+      <p>
+        Replacement parts are charged separately unless
+        otherwise stated. Parts availability and compatibility
+        may affect repair options.
+      </p>
 
-        <p>
-            Parts are generally charged separately from labor.
-            You will be informed of the expected repair cost before
-            paid work begins.
-        </p>
+      <p>
+        You'll receive a repair estimate before any paid
+        work begins. Repairs will only proceed after
+        you approve the estimated cost.
+      </p>
 
-        <p>
-            <strong>Diagnostics are always free.</strong>
-            There is no obligation to move forward with a repair.
-        </p>
+      <p>
+        <strong>Diagnostics are always FREE.</strong>
+        There is no obligation to proceed with a repair.
+      </p>
 
+      <p>
+        Home visits are available by appointment in
+        Mattoon and surrounding communities.
+        Any travel fees will be discussed in advance.
+      </p>
     </div>
+  </section>
 
-</section>
-
-
-<!-- CONTACT -->
-
-<section class="contact-section">
-
+  <!-- CONTACT AND BOOKING -->
+  <section class="contact-section">
     <div class="contact-content">
+      <p class="eyebrow">READY TO GET STARTED?</p>
 
-        <p class="eyebrow">
-            READY TO GET STARTED?
-        </p>
+      <h2>Have a Technology Problem?</h2>
 
-        <h2>
-            Have a Technology Problem?
-        </h2>
+      <p>
+        Book an appointment with Weber's Tech Repair Shop
+        and let us help get your device working again.
+      </p>
 
-        <p>
-            Contact Connor at Weber's Tech Repair Shop.
-        </p>
+      <a href="tel:2172730765" class="contact-phone">
+        217-273-0765
+      </a>
 
-
+      <p>
         <a
-            href="tel:2172730765"
-            class="contact-phone"
+          href="mailto:weberstechrepair@gmail.com"
+          style="color:white;font-weight:700;"
         >
-            217-273-0765
+          weberstechrepair@gmail.com
+        </a>
+      </p>
+
+      <div class="contact-buttons">
+        <a
+          href="https://app.squareup.com/appointments/book/hkiio83uwigmk5/L3M8JD759WEPA/start"
+          class="button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Book an Appointment
         </a>
 
-
-        <p>
-            <a
-                href="mailto:weberstechrepair@gmail.com"
-                style="color: white; font-weight: 700;"
-            >
-                weberstechrepair@gmail.com
-            </a>
-        </p>
-
-
-        <div class="contact-buttons">
-
-            <a
-                href="index.html#repair"
-                class="button"
-            >
-                Request a Repair
-            </a>
-
-            <a
-                href="mailto:weberstechrepair@gmail.com"
-                class="button button-outline"
-            >
-                Email Connor
-            </a>
-
-        </div>
-
+        <a
+          href="mailto:weberstechrepair@gmail.com"
+          class="button button-outline"
+        >
+          Email Us
+        </a>
+      </div>
     </div>
-
-</section>
-
+  </section>
 
 </main>
 
-
 <!-- FOOTER -->
-
 <footer>
-
-    <div class="footer-content">
-
-        <div>
-
-            <h3>
-                Weber's Tech Repair Shop
-            </h3>
-
-            <p>
-                Connor Weber — Owner & Technician
-            </p>
-
-            <p>
-                217-273-0765
-            </p>
-
-            <p>
-                <a href="mailto:weberstechrepair@gmail.com">
-                    weberstechrepair@gmail.com
-                </a>
-            </p>
-
-        </div>
-
-
-        <div class="footer-links">
-
-            <a href="index.html">Home</a>
-
-            <a href="index.html#services">Services</a>
-
-            <a href="prices.html">Prices</a>
-
-            <a href="index.html#about">About</a>
-
-            <a href="index.html#repair">Repair Request</a>
-
-            <a href="index.html#contact">Contact</a>
-
-        </div>
-
+  <div class="footer-content">
+    <div>
+      <h3>Weber's Tech Repair Shop</h3>
+      <p>Connor Weber — Owner &amp; Technician</p>
+      <p>Mattoon, Illinois</p>
+      <p>217-273-0765</p>
+      <p>
+        <a href="mailto:weberstechrepair@gmail.com">
+          weberstechrepair@gmail.com
+        </a>
+      </p>
     </div>
 
-
-    <div class="copyright">
-
-        © 2026 Weber's Tech Repair Shop. All rights reserved.
-
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="prices.html">Prices</a>
+      <a href="index.html#about">About</a>
+      <a href="waiver.html">Waiver &amp; Terms</a>
+      <a href="index.html#contact">Contact</a>
     </div>
+  </div>
 
+  <div class="copyright">
+    © 2026 Weber's Tech Repair Shop. All rights reserved.
+  </div>
 </footer>
-
 
 </body>
 </html>
