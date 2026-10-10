@@ -2,101 +2,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Weber's Tech Repair Shop offers affordable local repair for phones, laptops, PCs, game consoles, printers and more in Mattoon, Illinois. Free diagnostics.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Weber's Tech Repair Shop | Affordable Local Tech Repair</title>
+  <meta name="description"
+        content="Weber's Tech Repair Shop offers affordable phone, laptop, PC, console, and printer repairs in Mattoon, Illinois. Free diagnostics and convenient appointments.">
 
-<link rel="stylesheet" href="style.css">
+  <title>Weber's Tech Repair Shop | Mattoon, IL</title>
 
-<style>
-  .booking-notice {
-    background: #eef5ff;
-    border-left: 4px solid #1767b1;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    color: #172336;
-    line-height: 1.6;
-  }
+  <link rel="stylesheet" href="style.css">
 
-  .booking-actions {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-top: 25px;
-  }
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-  .terms-agreement {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    margin: 20px 0;
-    line-height: 1.6;
-  }
+    .booking-notice {
+      background: #eef5ff;
+      border-left: 4px solid #1767b1;
+      padding: 20px;
+      margin: 24px auto;
+      border-radius: 8px;
+      color: #172336;
+      line-height: 1.7;
+      max-width: 800px;
+    }
 
-  .terms-agreement input {
-    width: auto !important;
-    margin-top: 6px;
-    flex-shrink: 0;
-  }
+    .booking-notice h3 {
+      margin-top: 0;
+    }
 
-  .terms-agreement a {
-    color: #1767b1;
-    text-decoration: underline;
-  }
+    .booking-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+    }
 
-  .repair-form .form-help {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #526174;
-  }
+    .appointment-options {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin: 30px auto;
+      max-width: 1100px;
+    }
 
-  .repair-form .form-select {
-    width: 100%;
-    box-sizing: border-box;
-  }
+    .appointment-option {
+      background: #fff;
+      border: 1px solid #e1e7ef;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
 
-  .service-details {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
+    .appointment-option .service-icon {
+      font-size: 2.3rem;
+      margin-bottom: 12px;
+    }
 
-  .service-details p {
-    margin: 15px 0;
-    line-height: 1.7;
-  }
-</style>
+    .appointment-option h3 {
+      margin-bottom: 10px;
+    }
+
+    .appointment-option p {
+      line-height: 1.7;
+    }
+
+    .appointment-details {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .appointment-details p {
+      line-height: 1.7;
+    }
+
+    .waiver-information {
+      max-width: 850px;
+      margin: 25px auto 0;
+      text-align: center;
+    }
+
+    .waiver-information p {
+      line-height: 1.7;
+    }
+
+    .waiver-information a {
+      color: #1767b1;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 850px) {
+      .appointment-options {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-<nav class="navbar">
+  <nav class="navbar">
 
-  <a href="index.html" class="logo">
-    <img src="logo.png" alt="Weber's Tech Repair Shop">
-  </a>
+    <a href="index.html" class="logo">
+      <img
+        src="logo.png"
+        alt="Weber's Tech Repair Shop Logo">
+    </a>
 
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="#services">Services</a>
-    <a href="prices.html">Prices</a>
-    <a href="#about">About</a>
-    <a href="#appointments">Appointments</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contact">Contact</a>
-    <a href="waiver.html">Waiver &amp; Terms</a>
-  </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="prices.html">Prices</a>
+      <a href="#about">About</a>
+      <a href="#appointments">Appointments</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a href="waiver.html">Waiver &amp; Terms</a>
+    </div>
 
-  <a href="#repair" class="nav-button">
-    Request Repair
-  </a>
+    <a
+      href="https://app.squareup.com/appointments/book/hkiio83uwigmk5/L3M8JD759WEPA/start"
+      class="nav-button"
+      target="_blank"
+      rel="noopener noreferrer">
+      Book Appointment
+    </a>
 
-</nav>
+  </nav>
 </header>
 
 <main>
@@ -104,7 +143,9 @@
 <!-- HERO -->
 
 <section id="home" class="hero">
+
   <div class="hero-content">
+
     <div class="hero-text">
 
       <p class="eyebrow">
@@ -112,16 +153,18 @@
       </p>
 
       <h1>
-        Affordable Tech Repair for Your Everyday Devices.
+        Affordable Tech Repair for Your
+        Everyday Devices.
       </h1>
 
       <p class="hero-description">
-        Phones, laptops, PCs, game consoles, printers,
-        and more. Get friendly local technology help
-        without the high prices.
+        Phones, laptops, PCs, game consoles,
+        printers, and more. Get friendly,
+        local technology help without
+        the high prices.
 
-        Device drop-offs and home visits are available
-        by approved appointment.
+        Device drop-offs and home visits
+        are available by approved appointment.
       </p>
 
       <div class="hero-buttons">
@@ -134,11 +177,9 @@
           Schedule an Appointment
         </a>
 
-        <a href="#repair" class="button button-outline">
-          Request a Repair
-        </a>
-
-        <a href="prices.html" class="button button-outline">
+        <a
+          href="prices.html"
+          class="button button-outline">
           View Prices
         </a>
 
@@ -151,7 +192,9 @@
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 
@@ -160,19 +203,23 @@
 <section class="free-diagnostic">
 
   <div>
-    <p class="eyebrow">NO SURPRISES</p>
+
+    <p class="eyebrow">
+      NO SURPRISES
+    </p>
 
     <h2>FREE Diagnostics</h2>
 
     <p>
       Not sure what's wrong with your device?
-      Schedule an approved drop-off appointment
-      and I'll take a look for free.
+      Schedule a drop-off appointment and
+      I'll take a look for free.
 
-      You'll know what's wrong and what the repair
-      is expected to cost before any paid repair
-      work begins.
+      You'll know what's wrong and what the
+      repair is expected to cost before
+      any paid repair work begins.
     </p>
+
   </div>
 
   <a href="prices.html" class="button">
@@ -187,15 +234,19 @@
 <section id="services" class="section">
 
   <div class="section-heading">
-    <p class="eyebrow">WHAT WE REPAIR</p>
+
+    <p class="eyebrow">
+      WHAT WE REPAIR
+    </p>
 
     <h2>Technology Services</h2>
 
     <p>
-      From everyday troubleshooting to hardware repairs,
-      Weber's Tech Repair Shop is here to help keep your
-      technology working.
+      From everyday troubleshooting to hardware
+      repairs, Weber's Tech Repair Shop is here
+      to help keep your technology working.
     </p>
+
   </div>
 
   <div class="services-grid">
@@ -204,8 +255,9 @@
       <div class="service-icon">📱</div>
       <h3>Phone Repair</h3>
       <p>
-        Help with phone screens, batteries, charging
-        problems, software issues, setup, and more.
+        Help with phone screens, batteries,
+        charging problems, software issues,
+        setup, and more.
       </p>
     </div>
 
@@ -258,6 +310,7 @@
     </div>
 
   </div>
+
 </section>
 
 
@@ -266,6 +319,7 @@
 <section id="about" class="about-section">
 
   <div class="about-container">
+
     <div class="about-content">
 
       <p class="eyebrow">
@@ -275,18 +329,19 @@
       <h2>Meet Connor Weber.</h2>
 
       <p>
-        Hi, I'm Connor Weber, the owner and technician
-        behind Weber's Tech Repair Shop. I'm a college
-        student studying Computers and Information
-        Technology, and I've always enjoyed working
-        with technology.
+        Hi, I'm Connor Weber, the owner and
+        technician behind Weber's Tech Repair Shop.
+
+        I'm a college student studying Computers
+        and Information Technology, and I've
+        always enjoyed working with technology.
       </p>
 
       <p>
         I started Weber's Tech Repair Shop because
-        I wanted to use my technology skills to help
-        people in my local community while building
-        experience for my future career.
+        I wanted to use my technology skills to
+        help people in my local community while
+        building experience for my future career.
       </p>
 
       <p>
@@ -298,11 +353,11 @@
       </p>
 
       <p>
-        Whether you have a broken phone, a slow laptop,
-        a computer that won't start, a game console
-        that needs attention, or a printer that isn't
-        working, I'll do my best to find a practical
-        solution.
+        Whether you have a broken phone,
+        a slow laptop, a computer that won't
+        start, a game console that needs attention,
+        or a printer that isn't working,
+        I'll do my best to find a practical solution.
       </p>
 
       <div class="about-points">
@@ -325,6 +380,7 @@
       </div>
 
     </div>
+
   </div>
 
 </section>
@@ -335,108 +391,175 @@
 <section class="section">
 
   <div class="section-heading">
-    <p class="eyebrow">WHY CHOOSE US</p>
+
+    <p class="eyebrow">
+      WHY CHOOSE US
+    </p>
+
     <h2>Simple. Affordable. Local.</h2>
+
   </div>
 
   <div class="features-grid">
 
     <div class="feature">
+
       <div class="feature-number">01</div>
+
       <h3>Affordable</h3>
+
       <p>
-        As a college student building a local business,
-        my goal is to keep prices reasonable and accessible.
+        As a college student building a local
+        business, my goal is to keep prices
+        reasonable and accessible.
       </p>
+
     </div>
 
     <div class="feature">
+
       <div class="feature-number">02</div>
+
       <h3>Free Diagnostics</h3>
+
       <p>
-        Find out what's wrong with your device before
-        committing to a paid repair.
+        Find out what's wrong with your device
+        before committing to a paid repair.
       </p>
+
     </div>
 
     <div class="feature">
+
       <div class="feature-number">03</div>
+
       <h3>Personal Service</h3>
+
       <p>
-        You're dealing directly with a local technician
-        who wants to help solve your technology problem.
+        You're dealing directly with a local
+        technician who wants to help solve
+        your technology problem.
       </p>
+
     </div>
 
   </div>
+
 </section>
 
 
-<!-- SQUARE APPOINTMENTS -->
+<!-- APPOINTMENTS -->
 
 <section id="appointments" class="section">
 
   <div class="section-heading">
 
-    <p class="eyebrow">BY APPOINTMENT ONLY</p>
+    <p class="eyebrow">
+      BY APPOINTMENT ONLY
+    </p>
 
     <h2>Schedule Your Tech Repair</h2>
 
     <p>
-      Weber's Tech Repair Shop offers device drop-offs
-      at our home-based repair shop and home visits
-      in Mattoon and surrounding towns.
+      Book your device drop-off, home visit,
+      or completed repair pickup using
+      our Square online booking system.
     </p>
 
   </div>
 
-  <div class="service-details">
+  <div class="appointment-options">
 
-    <div class="booking-notice">
+    <div class="appointment-option">
 
-      <h3>Appointments Require Approval</h3>
+      <div class="service-icon">💻</div>
+
+      <h3>Device Drop-Off</h3>
 
       <p>
-        All appointment requests must be reviewed and
-        approved before they are confirmed.
+        Schedule a time to bring your phone,
+        laptop, desktop PC, game console,
+        printer, or other device for a
+        free diagnostic.
       </p>
 
       <p>
-        Please do not bring your device until you
-        receive appointment confirmation.
-      </p>
-
-      <p>
-        Our home-based drop-off address is shared
-        privately after your appointment is approved.
+        Our home-based repair shop address
+        will be shared privately after
+        appointment approval.
       </p>
 
     </div>
 
-    <h3>Device Drop-Offs</h3>
+    <div class="appointment-option">
 
-    <p>
-      Schedule a convenient time to bring in your
-      phone, computer, console, printer, or other
-      device. Devices are documented at intake and
-      cleaned using manufacturer-appropriate procedures.
-    </p>
+      <div class="service-icon">🏠</div>
 
-    <h3>Home Visits</h3>
+      <h3>Home Visit</h3>
 
-    <p>
-      Home visits may be requested in Mattoon,
-      Charleston, Sullivan, Lerna, and surrounding
-      communities for computer troubleshooting,
-      printer setup, Wi-Fi issues, and general
-      technology assistance.
-    </p>
+      <p>
+        Request an in-home technology support
+        appointment for computer troubleshooting,
+        printer setup, Wi-Fi issues,
+        software assistance, and more.
+      </p>
 
-    <p>
-      Home visit availability and any applicable
-      travel or service fees will be confirmed
-      before your appointment.
-    </p>
+      <p>
+        Available upon request in Mattoon,
+        Charleston, Sullivan, Lerna,
+        and surrounding communities.
+        Any applicable fees are confirmed
+        before the visit.
+      </p>
+
+    </div>
+
+    <div class="appointment-option">
+
+      <div class="service-icon">📦</div>
+
+      <h3>Device Pickup</h3>
+
+      <p>
+        Schedule a time to collect your device
+        after you've been notified that
+        the repair is complete.
+      </p>
+
+      <p>
+        Please only request a pickup after
+        receiving confirmation that your
+        device is ready.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="appointment-details">
+
+    <div class="booking-notice">
+
+      <h3>All Appointments Require Approval</h3>
+
+      <p>
+        Appointments are requests until reviewed
+        and approved by Weber's Tech Repair Shop.
+      </p>
+
+      <p>
+        A Repair Waiver &amp; Authorization
+        will be sent electronically and
+        must be signed before your appointment
+        can be approved.
+      </p>
+
+      <p>
+        Please do not bring your device
+        until your appointment is confirmed.
+      </p>
+
+    </div>
 
     <div class="booking-actions">
 
@@ -448,227 +571,60 @@
         Schedule an Appointment
       </a>
 
-      <a href="#repair" class="button button-outline">
-        Ask About a Repair
+      <a
+        href="waiver.html"
+        class="button button-outline">
+        Read Repair Waiver
       </a>
 
     </div>
 
   </div>
+
 </section>
 
 
-<!-- REPAIR REQUEST FORM -->
+<!-- WAIVER INFORMATION -->
 
-<section id="repair" class="repair-section">
+<section class="section">
 
-  <div class="repair-container">
+  <div class="section-heading">
 
-    <div class="repair-info">
+    <p class="eyebrow">
+      REPAIR AUTHORIZATION
+    </p>
 
-      <p class="eyebrow">NEED HELP?</p>
-
-      <h2>Tell Me What's Going On.</h2>
-
-      <p>
-        Fill out the form with information about your
-        device and the problem you're experiencing.
-      </p>
-
-      <p>
-        Diagnostics are free. I'll use the information
-        to understand what you need help with and
-        get in contact with you.
-      </p>
-
-      <p>
-        This form is for repair inquiries.
-        To request a specific appointment date
-        and time, please use our Square
-        appointment booking page.
-      </p>
-
-      <div class="phone-box">
-
-        <span>Prefer to call?</span>
-
-        <a href="tel:2172730765">
-          217-273-0765
-        </a>
-
-        <span style="margin-top:15px">
-          Or email:
-        </span>
-
-        <a href="mailto:weberstechrepair@gmail.com">
-          weberstechrepair@gmail.com
-        </a>
-
-      </div>
-
-    </div>
-
-    <form
-      class="repair-form"
-      id="repairForm"
-      action="https://formspree.io/f/maeqobgb"
-      method="POST">
-
-      <label for="name">Name</label>
-
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Your name"
-        required>
-
-      <label for="phone">Phone Number</label>
-
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="217-000-0000"
-        required>
-
-      <label for="email">Email</label>
-
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="you@example.com">
-
-      <label for="device">Device</label>
-
-      <select
-        id="device"
-        name="device"
-        class="form-select"
-        required>
-
-        <option value="">Select a device</option>
-        <option value="Phone">Phone</option>
-        <option value="Laptop">Laptop</option>
-        <option value="Desktop PC">Desktop PC</option>
-        <option value="Game Console">Game Console</option>
-        <option value="Printer">Printer</option>
-        <option value="Tablet">Tablet</option>
-        <option value="Other">Other</option>
-
-      </select>
-
-      <label for="problem">What's wrong?</label>
-
-      <textarea
-        id="problem"
-        name="problem"
-        rows="5"
-        placeholder="Describe the problem you're having..."
-        required></textarea>
-
-      <label for="service-type">
-        Preferred Service Type
-      </label>
-
-      <select
-        id="service-type"
-        name="service_type"
-        class="form-select"
-        required>
-
-        <option value="">Choose an option</option>
-        <option value="Device Drop-Off">
-          Device Drop-Off
-        </option>
-        <option value="Home Visit">
-          Home Visit
-        </option>
-        <option value="Not Sure">
-          Not Sure
-        </option>
-
-      </select>
-
-      <label for="payment-method">
-        Preferred Payment Method
-      </label>
-
-      <select
-        id="payment-method"
-        name="payment_preference"
-        class="form-select"
-        required>
-
-        <option value="Cash">Cash</option>
-
-        <option value="Online Invoice">
-          Online Invoice (if available)
-        </option>
-
-      </select>
-
-      <p class="form-help">
-        Diagnostics are free. No payment is collected
-        through this form. Any paid repair requires
-        your approval before work begins.
-      </p>
-
-      <input
-        type="hidden"
-        name="terms_version"
-        value="2026-10-09">
-
-      <label for="agreement-name">
-        Full Name for Terms Acknowledgment
-      </label>
-
-      <input
-        type="text"
-        id="agreement-name"
-        name="agreement_name"
-        placeholder="Your full name"
-        required>
-
-      <label class="terms-agreement">
-
-        <input
-          type="checkbox"
-          name="terms_acknowledged"
-          value="Yes"
-          required>
-
-        <span>
-          I confirm that I own this device or am
-          authorized to request service. I have
-          read and agree to Weber's Tech Repair Shop's
-          <a
-            href="waiver.html"
-            target="_blank"
-            rel="noopener noreferrer">
-            Repair Waiver &amp; Terms
-          </a>.
-          I understand that repair services involve
-          certain risks, that appointments must be
-          approved before confirmation, and that
-          additional authorization may be required
-          when I drop off my device.
-        </span>
-
-      </label>
-
-      <button
-        type="submit"
-        class="button form-button">
-        Submit Repair Request
-      </button>
-
-      <p id="form-message" class="form-message"></p>
-
-    </form>
+    <h2>Your Device. Your Approval.</h2>
 
   </div>
+
+  <div class="waiver-information">
+
+    <p>
+      Before a repair appointment is approved,
+      customers must electronically sign our
+      Repair Waiver &amp; Authorization through
+      Square Contracts.
+    </p>
+
+    <p>
+      This helps document service authorization
+      and important repair terms.
+    </p>
+
+    <p>
+      You can review the waiver before scheduling.
+      A separate electronic signature request
+      will be sent after your appointment request
+      is received.
+    </p>
+
+    <a href="waiver.html">
+      Review Repair Waiver &amp; Terms
+    </a>
+
+  </div>
+
 </section>
 
 
@@ -677,82 +633,149 @@
 <section id="faq" class="section">
 
   <div class="section-heading">
+
     <p class="eyebrow">FAQ</p>
+
     <h2>Frequently Asked Questions</h2>
+
   </div>
 
   <div class="faq-container">
 
     <details>
-      <summary>Are diagnostics really free?</summary>
+      <summary>
+        Are diagnostics really free?
+      </summary>
+
       <p>
-        Yes. Diagnostics are free. I'll look at the
-        device, identify the problem as best as possible,
-        and explain what needs to be done before you
-        decide whether to move forward with a paid repair.
+        Yes. Diagnostics are free. I'll inspect
+        your device and explain what needs
+        to be done before you decide whether
+        to move forward with a paid repair.
       </p>
     </details>
 
     <details>
-      <summary>What devices do you repair?</summary>
+      <summary>
+        What devices do you repair?
+      </summary>
+
       <p>
-        I work with phones, laptops, desktop PCs,
-        game consoles, printers, tablets, and other
-        everyday technology. Contact me if you're
-        unsure whether I can help with your device.
+        I work with phones, laptops,
+        desktop PCs, game consoles,
+        printers, tablets, and other
+        everyday technology.
       </p>
     </details>
 
     <details>
-      <summary>How much does a repair cost?</summary>
+      <summary>
+        How much does a repair cost?
+      </summary>
+
       <p>
-        Prices depend on the device, problem, and
-        parts required. Check the Prices page for
-        starting prices. You'll receive an estimate
+        Prices depend on the device,
+        problem, and parts required.
+        Check the Prices page for
+        starting prices.
+
+        You'll receive an estimate
         before paid repair work begins.
       </p>
     </details>
 
     <details>
-      <summary>Do I need an appointment?</summary>
+      <summary>
+        Do I need an appointment?
+      </summary>
+
       <p>
-        Yes. Device drop-offs, pickups, and home visits
-        are by approved appointment only. You can
-        request an appointment using the Square
-        booking link on this website.
+        Yes. Device drop-offs, pickups,
+        and home visits are by approved
+        appointment only.
+
+        You can request an appointment
+        through our Square booking page.
       </p>
     </details>
 
     <details>
-      <summary>Do you offer home visits?</summary>
+      <summary>
+        Why do I need to sign a repair waiver?
+      </summary>
+
       <p>
-        Yes. Home visits are available upon request
-        in Mattoon and surrounding towns. Availability
-        and any applicable fees are confirmed before
+        The waiver documents your authorization
+        for repair services and explains
+        important repair terms and risks.
+
+        You'll receive a separate electronic
+        waiver through Square Contracts
+        before your appointment is approved.
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        Do you offer home visits?
+      </summary>
+
+      <p>
+        Yes. Home visits are available
+        upon request in Mattoon and
+        surrounding communities.
+
+        Availability and applicable
+        fees will be confirmed before
         the appointment.
       </p>
     </details>
 
     <details>
-      <summary>What payment methods do you accept?</summary>
+      <summary>
+        What payment methods do you accept?
+      </summary>
+
       <p>
-        Cash is accepted. Secure online invoice
-        payments may also be available by arrangement.
-        Payment details are provided before any
-        paid work begins.
+        Cash is accepted. Secure online
+        invoice payments may also be
+        available by arrangement.
+
+        Payment details are provided
+        before any paid repair work begins.
       </p>
     </details>
 
     <details>
-      <summary>Do you provide the parts?</summary>
+      <summary>
+        Do you provide replacement parts?
+      </summary>
+
       <p>
-        Parts can be ordered when needed. Parts
-        are generally charged separately from
-        repair labor.
+        Parts can be ordered when needed.
+        Parts are generally charged
+        separately from repair labor.
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        Where is your repair shop located?
+      </summary>
+
+      <p>
+        Weber's Tech Repair Shop is a
+        home-based business in Mattoon,
+        Illinois.
+
+        The exact drop-off address is
+        provided privately after your
+        appointment is approved.
       </p>
     </details>
 
   </div>
+
 </section>
 
 
@@ -762,13 +785,18 @@
 
   <div class="contact-content">
 
-    <p class="eyebrow">GET IN TOUCH</p>
+    <p class="eyebrow">
+      GET IN TOUCH
+    </p>
 
-    <h2>Let's Get Your Technology Working Again.</h2>
+    <h2>
+      Let's Get Your Technology Working Again.
+    </h2>
 
     <p>
       Have a broken device or technology problem?
-      Contact Connor at Weber's Tech Repair Shop.
+      Contact Weber's Tech Repair Shop or
+      request an appointment online.
     </p>
 
     <a
@@ -780,7 +808,7 @@
     <p>
       <a
         href="mailto:weberstechrepair@gmail.com"
-        style="color:white;font-weight:700">
+        style="color:white;font-weight:700;">
         weberstechrepair@gmail.com
       </a>
     </p>
@@ -795,17 +823,16 @@
         Schedule an Appointment
       </a>
 
-      <a href="#repair" class="button button-outline">
-        Request a Repair
-      </a>
-
-      <a href="prices.html" class="button button-outline">
+      <a
+        href="prices.html"
+        class="button button-outline">
         View Prices
       </a>
 
     </div>
 
   </div>
+
 </section>
 
 </main>
@@ -829,6 +856,10 @@
         Affordable Local Technology Repair
       </p>
 
+      <p>
+        Mattoon, Illinois
+      </p>
+
     </div>
 
     <div class="footer-links">
@@ -838,7 +869,7 @@
       <a href="prices.html">Prices</a>
       <a href="#about">About</a>
       <a href="#appointments">Appointments</a>
-      <a href="#repair">Repair Request</a>
+      <a href="#faq">FAQ</a>
       <a href="waiver.html">Waiver &amp; Terms</a>
       <a href="#contact">Contact</a>
 
@@ -849,7 +880,7 @@
   <div class="copyright">
 
     <p>
-      © 2026 Weber's Tech Repair Shop.
+      &copy; 2026 Weber's Tech Repair Shop.
       All rights reserved.
     </p>
 
